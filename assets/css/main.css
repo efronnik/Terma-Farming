@@ -94,6 +94,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  scroll-behavior: smooth;
 }
 
 article,
@@ -2408,7 +2409,25 @@ body.homepage.is-preload #header:after {
   text-align: center;
   padding: 1.5em 0 1.5em 0;
   z-index: 1;
-  overflow: hidden;
+  overflow: visible;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+#logo-container {
+  position: fixed;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  top: 110px;
+}
+
+#logo-container a {
+  border-bottom: none;
+}
+
+#site-logo {
+  width: 100px;
+  height: auto;
 }
 
 #nav > ul {
