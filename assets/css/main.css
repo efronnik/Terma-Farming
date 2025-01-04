@@ -2325,12 +2325,12 @@ header .icon.circled {
 }
 
 #header header > p {
-  font-size: 1.25em;
+  font-size: 3em;
   margin: 0;
 }
 
 #header h1 {
-  color: #fff;
+  color: #333;
   font-size: 3em;
   line-height: 1em;
 }
@@ -2372,7 +2372,7 @@ body.homepage #header {
 }
 
 body.homepage #header h1 {
-  font-size: 4em;
+  font-size: 6em;
 }
 
 body.homepage #header:after {
@@ -2428,6 +2428,12 @@ body.homepage.is-preload #header:after {
 #site-logo {
   width: 100px;
   height: auto;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+#site-logo:hover {
+  opacity: 1;
 }
 
 #nav > ul {
