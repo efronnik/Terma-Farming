@@ -16,7 +16,7 @@
 
 		<!-- Header -->
 		<div id="header">
-			<video class="video" autoplay muted loop id="background-video">
+			<video class="video" autoplay muted loop playsinline id="background-video">
 				<source src="./images/videos/Drone_main_backgraund.mp4" type="video/mp4">
 				Ваш браузер не поддерживает видео.
 			</video>
@@ -24,274 +24,243 @@
 			<div class="inner">
 				<header>
 					<h1><a href="index.html" id="logo">Therma-Sat Farming</a></h1>
-					<hr />
 					<p>2024-1-PL01-KA220-VET-000243502</p>
 				</header>
+
 				<footer>
 					<a href="javascript:void(0);" class="button circled scrolly" id="animateButton">Start</a>
 				</footer>
 			</div>
 
-			<!-- Контейнер с iframe, который будет анимироваться -->
-			<div id="gifContainer" style="padding-top:80.000%; position:relative; display: none;">
-				<iframe src="https://gifer.com/embed/SNwN" width="100%" height="100%"
-					style="position:absolute; top:0; left:0;" frameBorder="0" allowFullScreen></iframe>
-			</div>
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li>
+						<a href="#partners-carousel">Partners</a>
+					</li>
+					<li><a href="left-sidebar.html">Courses</a></li>
+					<li><a href="right-sidebar.html">News</a></li>
+					<li><a href="no-sidebar.html">About</a></li>
+				</ul>
+				<div id="logo-container">
+					<!-- Logo -->
+					<a href="index.html">
+						<img src="./images/logo.png" alt="Therma-Sat Farming Logo" id="site-logo" />
+					</a>
+				</div>
+			</nav>
+
 		</div>
 
-		<script>
-			document.getElementById("animateButton").addEventListener("click", function () {
-				var gifContainer = document.getElementById("gifContainer");
-
-				// Показываем gif-контейнер
-				gifContainer.style.display = "block";
-
-				// Даем время на его появление
-				setTimeout(function () {
-					gifContainer.classList.add("moving"); // Применяем анимацию
-				}, 100); // Немного задержим, чтобы анимация начала работать после показа элемента
-			});
-
-		</script>
-
-		<!-- Nav -->
-		<nav id="nav">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li>
-					<a href="#partners-carousel">Partners</a>
-				</li>
-				<li><a href="left-sidebar.html">Courses</a></li>
-				<li><a href="right-sidebar.html">News</a></li>
-				<li><a href="no-sidebar.html">About</a></li>
-			</ul>
-			<div id="logo-container">
-				<!-- Logo -->
-				<a href="index.html">
-					<img src="./images/logo.png" alt="Therma-Sat Farming Logo" id="site-logo" />
-				</a>
-			</div>
-		</nav>
-
-	</div>
-
-	<!-- Banner -->
-	<section id="partners-carousel">
-		<header>
-			<h2 class="primary-heading">Our <strong>Partners</strong></h2>
-		</header>
-	</section>
-
-	<!-- Carousel -->
-	<section class="carousel">
-		<div class="reel">
-
-			<article class="cards_partners">
-				<a href="https://zsckrswarozyn.pl/" target="_blank" class="image featured">
-					<img src="./images/ZSCKR.png" alt="logo Poland" width="10" />
-				</a>
-				<header>
-					<h3><a href="https://zsckrswarozyn.pl/" target="_blank">ZSCKR w Swarożynie</a></h3>
-				</header>
-				<p>The school prepares students for their professions using modernized and expanded educational
-					facilities.</p>
-			</article>
-
-			<article class="cards_partners">
-				<a href="https://www.chironisatta.edu.it/" target="_blank" class="image featured"><img
-						src="./images/CHIRONI.png" alt="logo Sardinia" /></a>
-				<header>
-					<h3><a href="https://www.chironisatta.edu.it/" target="_blank">ITC Gian Pietro Chironi -
-							Salvatore Satta</a></h3>
-				</header>
-				<p>The school adapts to market demands, equipping students with career skills.</p>
-			</article>
-
-			<article class="cards_partners">
-				<a href="https://www.agronomska-skola-zagreb.hr/" target="_blank" class="image featured"><img
-						src="./images/Agronomska skola.png" alt="" /></a>
-				<header>
-					<h3><a href="https://www.agronomska-skola-zagreb.hr/" target="_blank">Agronomska škola
-							Zagreb</a></h3>
-				</header>
-				<p>It offers agricultural programs, equipping students for careers in the field.</p>
-			</article>
-
-			<article class="cards_partners">
-				<a href="https://www.air3dmap.com/" target="_blank" class="image featured"><img
-						src="./images/air3dmap.png" alt="" /></a>
-				<header>
-					<h3><a href="https://www.air3dmap.com/" target="_blank">AIR3DMAP</a></h3>
-				</header>
-				<p>The company creates sensors and software for energy, agriculture, and the environment.</p>
-			</article>
-
-			<article class="cards_partners">
-				<a href="https://www.liceulbratianu.ro/" target="_blank" class="image featured"><img
-						src="./images/LTBD.png" alt="" /></a>
-				<header>
-					<h3><a href="https://www.liceulbratianu.ro/" target="_blank">Liceul Tehnologic "Ion I.C.
-							Brătianu"</a></h3>
-				</header>
-				<p>The school offers technical programs with modern labs and skilled staff.</p>
-			</article>
-
-			<article class="cards_partners">
-				<a href="https://mpasamtal.meb.k12.tr/" class="image featured"><img src="./images/MTAL.png" alt=""
-						background="inherit" /></a>
-				<header>
-					<h3><a href="https://mpasamtal.meb.k12.tr/">Muratpaşa Mesleki ve Teknik Anadolu Lisesi</a></h3>
-				</header>
-				<p>It offers vocational education, preparing students for careers.</p>
-			</article>
-		</div>
-	</section>
-
-	<!-- Main -->
-	<div class="wrapper style2">
-
-		<article id="main" class="container special">
-			<a href="#" class="image featured"><img src="images/Drone_sky.jpg" alt="" /></a>
+		<!-- Banner -->
+		<section id="partners-carousel">
 			<header>
-				<h2>About our project</h2>
-				<p>
-					The project wants to develop learning and teaching resources by using
-					innovative tools and methods in STEM education for vocational education
-					students (15-19 years old).
-				</p>
+				<h2 class="primary-heading">Our <strong>Partners</strong></h2>
 			</header>
-			<p>
-				The project aims to create comprehensive learning and teaching resources specifically designed for
-				students aged 15 to
-				19 who are pursuing vocational education. These resources will focus on STEM (Science, Technology,
-				Engineering, and
-				Mathematics) subjects and will incorporate cutting-edge tools and innovative teaching methods. By
-				leveraging modern
-				technologies and pedagogical strategies, the project seeks to enhance the educational experience,
-				making STEM learning
-				more engaging, practical, and effective for vocational students. The ultimate goal is to equip these
-				learners with the
-				skills and knowledge needed to excel in their chosen fields and to prepare them for future
-				challenges in a rapidly
-				evolving technological landscape.
-			</p>
-		</article>
+		</section>
 
-	</div>
+		<!-- Carousel -->
+		<section class="carousel">
+			<div class="reel">
 
-	<!-- Features -->
-	<div class="wrapper style1">
-
-		<section id="features" class="container special">
-			<header>
-				<h2>News</h2>
-			</header>
-			<div class="row">
-				<article class="col-4 col-12-mobile special">
-					<a href="#" class="image featured"><img src="images/Drones_Germany.webp" alt="" /></a>
+				<article class="cards_partners">
+					<a href="https://zsckrswarozyn.pl/" target="_blank" class="image featured">
+						<img src="./images/ZSCKR.png" alt="logo Poland" width="10" />
+					</a>
 					<header>
-						<h3><a href="#">The Use of Quadcopters in STEM Education</a></h3>
+						<h3><a href="https://zsckrswarozyn.pl/" target="_blank">ZSCKR w Swarożynie</a></h3>
 					</header>
-					<p>
-						In Germany, educational programs are conducted
-						where quadcopters are used to
-						teach students the basics of agricultural activities, including field monitoring, resource
-						management, and soil
-						condition analysis. Such activities increase students' interest in agriculture and develop
-						practical skills in
-						agrotechnology.
-					</p>
+					<p>The school prepares students for their professions using modernized and expanded educational
+						facilities.</p>
 				</article>
-				<article class="col-4 col-12-mobile special">
-					<a href="#" class="image featured"><img src="images/Drones_fin.webp" alt="" /></a>
+
+				<article class="cards_partners">
+					<a href="https://www.chironisatta.edu.it/" target="_blank" class="image featured"><img
+							src="./images/CHIRONI.png" alt="logo Sardinia" /></a>
 					<header>
-						<h3><a href="#">Atlas</a></h3>
+						<h3><a href="https://www.chironisatta.edu.it/" target="_blank">ITC Gian Pietro Chironi -
+								Salvatore Satta</a></h3>
 					</header>
-					<p>
-						In 2024, the "Atlas of Best Practices in STEM Education" was published, showcasing
-						successful examples of implementing
-						the STEM approach in educational systems of various countries. In particular, Finland has
-						been carrying out an education
-						reform since the 1970s aimed at decentralization and the introduction of innovative
-						pedagogical methods, including the
-						integration of STEM technologies across all areas of the school curriculum.
-					</p>
+					<p>The school adapts to market demands, equipping students with career skills.</p>
 				</article>
-				<article class="col-4 col-12-mobile special">
-					<a href="#" class="image featured"><img src="images/STEM Australia.webp" alt="" /></a>
+
+				<article class="cards_partners">
+					<a href="https://www.agronomska-skola-zagreb.hr/" target="_blank" class="image featured"><img
+							src="./images/Agronomska skola.png" alt="" /></a>
 					<header>
-						<h3><a href="#">Creative Bytes Initiative for Rural Areas/a></h3>
+						<h3><a href="https://www.agronomska-skola-zagreb.hr/" target="_blank">Agronomska škola
+								Zagreb</a></h3>
 					</header>
-					<p>
-						The Melbourne-based initiative Creative Bytes offers free STEM education and programming
-						training for rural communities
-						in Australia. The program focuses on developing the skills of teachers in rural areas,
-						enabling them to effectively
-						teach students how to create their own video games. This helps to reduce the educational gap
-						between rural and urban
-						students.
-					</p>
+					<p>It offers agricultural programs, equipping students for careers in the field.</p>
+				</article>
+
+				<article class="cards_partners">
+					<a href="https://www.air3dmap.com/" target="_blank" class="image featured"><img
+							src="./images/air3dmap.png" alt="" /></a>
+					<header>
+						<h3><a href="https://www.air3dmap.com/" target="_blank">AIR3DMAP</a></h3>
+					</header>
+					<p>The company creates sensors and software for energy, agriculture, and the environment.</p>
+				</article>
+
+				<article class="cards_partners">
+					<a href="https://www.liceulbratianu.ro/" target="_blank" class="image featured"><img
+							src="./images/LTBD.png" alt="" /></a>
+					<header>
+						<h3><a href="https://www.liceulbratianu.ro/" target="_blank">Liceul Tehnologic "Ion I.C.
+								Brătianu"</a></h3>
+					</header>
+					<p>The school offers technical programs with modern labs and skilled staff.</p>
+				</article>
+
+				<article class="cards_partners">
+					<a href="https://mpasamtal.meb.k12.tr/" target="_blank" class="image featured"><img
+							src="./images/MTAL.png" alt="" background="inherit" /></a>
+					<header>
+						<h3><a href="https://mpasamtal.meb.k12.tr/">Muratpaşa Mesleki ve Teknik Anadolu Lisesi</a></h3>
+					</header>
+					<p>It offers vocational education, preparing students for careers.</p>
 				</article>
 			</div>
 		</section>
 
-	</div>
+		<!-- Main -->
+		<div class="wrapper style2">
 
-	<!-- Footer -->
-	<div id="footer">
-		<div class="container">
-			<div class="row">
-				<!-- EU -->
-				<section class="no-pointer">
-					<img src="./images/EU.png" alt="EU_Co_funded" width="500" height="112" />
-				</section>
-				<p>Funded by the European Union. Views and opinions expressed are however those of the author(s)
-					only and do not
-					necessarily reflect those of the European Union or the European Education and Culture
-					Executive Agency (EACEA). Neither
-					the European Union nor EACEA can be held responsible for them</p>
-			</div>
-			<hr />
-			<div class="row">
-				<div class="col-12">
+			<article id="main" class="container special">
+				<a href="#" class="image featured"><img src="images/Drone_sky.jpg" alt="" /></a>
+				<header>
+					<h2>About our project</h2>
+					<p>
+						The project wants to develop learning and teaching resources by using
+						innovative tools and methods in STEM education for vocational education
+						students (15-19 years old).
+					</p>
+				</header>
+				<p>
+					The project aims to create comprehensive learning and teaching resources specifically designed for
+					students aged 15 to
+					19 who are pursuing vocational education. These resources will focus on STEM (Science, Technology,
+					Engineering, and
+					Mathematics) subjects and will incorporate cutting-edge tools and innovative teaching methods. By
+					leveraging modern
+					technologies and pedagogical strategies, the project seeks to enhance the educational experience,
+					making STEM learning
+					more engaging, practical, and effective for vocational students. The ultimate goal is to equip these
+					learners with the
+					skills and knowledge needed to excel in their chosen fields and to prepare them for future
+					challenges in a rapidly
+					evolving technological landscape.
+				</p>
+			</article>
 
-					<!-- Contact -->
-					<section class="contact">
+		</div>
+
+		<!-- Features -->
+		<div class="wrapper style1">
+
+			<section id="features" class="container special">
+				<header>
+					<h2>News</h2>
+				</header>
+				<div class="row">
+					<article class="col-4 col-12-mobile special">
+						<a href="#" class="image featured"><img src="images/Drones_Germany.webp" alt="" /></a>
 						<header>
-							<h3>Nisl turpis nascetur interdum?</h3>
+							<h3><a href="#">The Use of Quadcopters in STEM Education</a></h3>
 						</header>
-						<p>Urna nisl non quis interdum mus ornare ridiculus egestas ridiculus
-							lobortis vivamus
-							tempor aliquet.</p>
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a>
-							</li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a>
-							</li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a>
-							</li>
-							<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a>
-							</li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a>
-							</li>
-							<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a>
-							</li>
-						</ul>
-					</section>
+						<p>
+							In Germany, educational programs are conducted
+							where quadcopters are used to
+							teach students the basics of agricultural activities, including field monitoring, resource
+							management, and soil
+							condition analysis. Such activities increase students' interest in agriculture and develop
+							practical skills in
+							agrotechnology.
+						</p>
+					</article>
+					<article class="col-4 col-12-mobile special">
+						<a href="#" class="image featured"><img src="images/Drones_fin.webp" alt="" /></a>
+						<header>
+							<h3><a href="#">Atlas</a></h3>
+						</header>
+						<p>
+							In 2024, the "Atlas of Best Practices in STEM Education" was published, showcasing
+							successful examples of implementing
+							the STEM approach in educational systems of various countries. In particular, Finland has
+							been carrying out an education
+							reform since the 1970s aimed at decentralization and the introduction of innovative
+							pedagogical methods, including the
+							integration of STEM technologies across all areas of the school curriculum.
+						</p>
+					</article>
+					<article class="col-4 col-12-mobile special">
+						<a href="#" class="image featured"><img src="images/STEM Australia.webp" alt="" /></a>
+						<header>
+							<h3><a href="#">Creative Bytes Initiative for Rural Areas </a></h3>
+						</header>
+						<p>
+							The Melbourne-based initiative Creative Bytes offers free STEM education and programming
+							training for rural communities
+							in Australia. The program focuses on developing the skills of teachers in rural areas,
+							enabling them to effectively
+							teach students how to create their own video games. This helps to reduce the educational gap
+							between rural and urban
+							students.
+						</p>
+					</article>
+				</div>
+			</section>
 
-					<!-- Copyright -->
-					<div class="copyright">
-						<ul class="menu">
-							<li>&copy; Untitled. All rights reserved.</li>
-							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
+		</div>
+
+		<!-- Footer -->
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+					<!-- EU -->
+					<section>
+						<img src=" ./images/EU.png" style="pointer-events: none;" alt="EU_Co_funded" width="500"
+							height="112" />
+						<p style="pointer-events: none;">Funded by the European Union. Views and opinions expressed are
+							however those of the author(s)
+							only and do not
+							necessarily reflect those of the European Union or the European Education and Culture
+							Executive Agency (EACEA). Neither
+							the European Union nor EACEA can be held responsible for them</p>
+					</section>
+				</div>
+				<hr />
+				<div class="row">
+					<div class="col-12">
+
+						<!-- Contact -->
+						<section class="contact">
+							<ul class="icons">
+								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a>
+								</li>
+								<li><a href="#" class="icon brands fa-facebook-f"><span
+											class="label">Facebook</span></a>
+								</li>
+								<li><a href="#" class="icon brands fa-instagram"><span
+											class="label">Instagram</span></a>
+								</li>
+							</ul>
+						</section>
+
+						<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; Untitled. All rights reserved.</li>
+							</ul>
+						</div>
+
 					</div>
 
 				</div>
-
 			</div>
 		</div>
-	</div>
 
 	</div>
 
