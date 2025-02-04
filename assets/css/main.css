@@ -183,7 +183,8 @@ body.is-preload *:after {
 
 input,
 textarea,
-select {
+select,
+button {
   font-size: 15pt;
   line-height: 1.85em;
   font-family: "Source Sans Pro", sans-serif;
@@ -1912,6 +1913,10 @@ footer {
   width: auto;
 }
 
+.center-image {
+  display: block;
+  margin: 0 auto;
+}
 /* List */
 
 ul {
@@ -2172,6 +2177,18 @@ button,
     border-bottom-color 0.35s ease-in-out;
   transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out,
     border-bottom-color 0.35s ease-in-out;
+}
+
+.oval-button {
+  background-color: #df7366;
+  color: white;
+  border: none;
+  padding: 15px 50px;
+  border-radius: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
 }
 
 input[type="button"]:hover,
