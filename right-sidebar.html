@@ -39,6 +39,7 @@
 					<li><a href="https://therma-sat.net/">Courses</a></li>
 					<li><a href="">Virtual Museum</a></li>
 					<li><a href="index.html#about">About</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
 				</ul>
 				<div id="logo-container">
 					<!-- Logo -->
@@ -359,61 +360,39 @@
 						<hr />
 						<section>
 							<header>
-								<h3><a href="#">Sed lorem etiam consequat</a></h3>
+								<h3>Our Gallery</h3>
 							</header>
-							<p>
-								Tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat integer
-								interdum.
-							</p>
-							<div class="row gtr-50">
-								<div class="col-4">
-									<a href="#" class="image fit"><img src="images/pic10.jpg" alt="" /></a>
-								</div>
-								<div class="col-8">
-									<h4>Nibh sed cubilia</h4>
-									<p>
-										Amet nullam fringilla nibh nulla convallis tique ante proin.
-									</p>
-								</div>
-								<div class="col-4">
-									<a href="#" class="image fit"><img src="images/pic11.jpg" alt="" /></a>
-								</div>
-								<div class="col-8">
-									<h4>Proin sed adipiscing</h4>
-									<p>
-										Amet nullam fringilla nibh nulla convallis tique ante proin.
-									</p>
-								</div>
-								<div class="col-4">
-									<a href="#" class="image fit"><img src="images/pic12.jpg" alt="" /></a>
-								</div>
-								<div class="col-8">
-									<h4>Lorem feugiat magna</h4>
-									<p>
-										Amet nullam fringilla nibh nulla convallis tique ante proin.
-									</p>
-								</div>
-								<div class="col-4">
-									<a href="#" class="image fit"><img src="images/pic13.jpg" alt="" /></a>
-								</div>
-								<div class="col-8">
-									<h4>Sed tempus fringilla</h4>
-									<p>
-										Amet nullam fringilla nibh nulla convallis tique ante proin.
-									</p>
-								</div>
-								<div class="col-4">
-									<a href="#" class="image fit"><img src="images/pic14.jpg" alt="" /></a>
-								</div>
-								<div class="col-8">
-									<h4>Malesuada fermentum</h4>
-									<p>
-										Amet nullam fringilla nibh nulla convallis tique ante proin.
-									</p>
-								</div>
+							<div class="gallery">
+								<div class="gallery-item"><img src="images/Antalya-1.jpg" alt=""
+										onclick="openModal(this)"></div>
+								<div class="gallery-item"><img src="images/Antalya-2.jpg" alt=""
+										onclick="openModal(this)"></div>
+								<div class="gallery-item"><img src="images/Antalya-3.jpg" alt=""
+										onclick="openModal(this)"></div>
+								<div class="gallery-item"><img src="images/Antalya-4.jpg" alt=""
+										onclick="openModal(this)"></div>
+								<div class="gallery-item"><img src="images/Antalya-5.jpg" alt=""
+										onclick="openModal(this)"></div>
+								<div class="gallery-item"><img src="images/Antalya-6.jpg" alt=""
+										onclick="openModal(this)"></div>
+								<div class="gallery-item"><img src="images/Antalya-7.jpg" alt=""
+										onclick="openModal(this)"></div>
+								<div class="gallery-item"><img src="images/Antalya-8.jpg" alt=""
+										onclick="openModal(this)"></div>
+								<div class="gallery-item"><img src="images/Antalya-9.jpg" alt=""
+										onclick="openModal(this)"></div>
+								<div class="gallery-item"><img src="images/Antalya-10.jpg" alt=""
+										onclick="openModal(this)"></div>
 							</div>
+
+							<!-- Модальное окно -->
+							<div id="modal" class="modal" onclick="closeModal()">
+								<span class="close">&times;</span>
+								<img class="modal-content" id="modal-img">
+							</div>
+
 							<footer>
-								<a href="#" class="button">Magna Adipiscing</a>
+								<a href="gallery.html" class="button">Show all gallery</a>
 							</footer>
 						</section>
 					</div>
@@ -421,15 +400,19 @@
 				<hr />
 				<div class="row">
 					<article class="col-4 col-12-mobile special">
-						<a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
+						<a href="#" class="image featured">
+							<video width="100%" controls>
+								<source src="./images/videos/BHP.mp4" type="video/mp4">
+								Ваш браузер не поддерживает видео.
+							</video>
+						</a>
 						<header>
-							<h3><a href="#">Gravida aliquam penatibus</a></h3>
+							<h3>Drone Safety Rules</h3>
 						</header>
 						<p>
-							Amet nullam fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor
-							etiam
-							porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat
-							integer interdum.
+							As drones become more popular, both for commercial and personal use, there is a growing need
+							to adhere to clear
+							standards in order to avoid accidents and ensure safety.
 						</p>
 					</article>
 					<article class="col-4 col-12-mobile special">
@@ -465,108 +448,17 @@
 		<div id="footer">
 			<div class="container">
 				<div class="row">
-
-					<!-- Tweets -->
-					<section class="col-4 col-12-mobile">
-						<header>
-							<h2 class="icon brands fa-twitter circled"><span class="label">Tweets</span></h2>
-						</header>
-						<ul class="divided">
-							<li>
-								<article class="tweet">
-									Amet nullam fringilla nibh nulla convallis tique ante sociis accumsan.
-									<span class="timestamp">5 minutes ago</span>
-								</article>
-							</li>
-							<li>
-								<article class="tweet">
-									Hendrerit rutrum quisque.
-									<span class="timestamp">30 minutes ago</span>
-								</article>
-							</li>
-							<li>
-								<article class="tweet">
-									Curabitur donec nulla massa laoreet nibh. Lorem praesent montes.
-									<span class="timestamp">3 hours ago</span>
-								</article>
-							</li>
-							<li>
-								<article class="tweet">
-									Lacus natoque cras rhoncus curae dignissim ultricies. Convallis orci aliquet.
-									<span class="timestamp">5 hours ago</span>
-								</article>
-							</li>
-						</ul>
+					<!-- EU -->
+					<section>
+						<img src=" ./images/EU.png" class="center-image" style="pointer-events: none;"
+							alt="EU_Co_funded" width="500" height="112" loading="lazy" />
+						<p style="pointer-events: none;">Funded by the European Union. Views and opinions expressed are
+							however those of the author(s)
+							only and do not
+							necessarily reflect those of the European Union or the European Education and Culture
+							Executive Agency (EACEA). Neither
+							the European Union nor EACEA can be held responsible for them</p>
 					</section>
-
-					<!-- Posts -->
-					<section class="col-4 col-12-mobile">
-						<header>
-							<h2 class="icon solid fa-file circled"><span class="label">Posts</span></h2>
-						</header>
-						<ul class="divided">
-							<li>
-								<article class="post stub">
-									<header>
-										<h3><a href="#">Nisl fermentum integer</a></h3>
-									</header>
-									<span class="timestamp">3 hours ago</span>
-								</article>
-							</li>
-							<li>
-								<article class="post stub">
-									<header>
-										<h3><a href="#">Phasellus portitor lorem</a></h3>
-									</header>
-									<span class="timestamp">6 hours ago</span>
-								</article>
-							</li>
-							<li>
-								<article class="post stub">
-									<header>
-										<h3><a href="#">Magna tempus consequat</a></h3>
-									</header>
-									<span class="timestamp">Yesterday</span>
-								</article>
-							</li>
-							<li>
-								<article class="post stub">
-									<header>
-										<h3><a href="#">Feugiat lorem ipsum</a></h3>
-									</header>
-									<span class="timestamp">2 days ago</span>
-								</article>
-							</li>
-						</ul>
-					</section>
-
-					<!-- Photos -->
-					<section class="col-4 col-12-mobile">
-						<header>
-							<h2 class="icon solid fa-camera circled"><span class="label">Photos</span></h2>
-						</header>
-						<div class="row gtr-25">
-							<div class="col-6">
-								<a href="#" class="image fit"><img src="images/pic10.jpg" alt="" /></a>
-							</div>
-							<div class="col-6">
-								<a href="#" class="image fit"><img src="images/pic11.jpg" alt="" /></a>
-							</div>
-							<div class="col-6">
-								<a href="#" class="image fit"><img src="images/pic12.jpg" alt="" /></a>
-							</div>
-							<div class="col-6">
-								<a href="#" class="image fit"><img src="images/pic13.jpg" alt="" /></a>
-							</div>
-							<div class="col-6">
-								<a href="#" class="image fit"><img src="images/pic14.jpg" alt="" /></a>
-							</div>
-							<div class="col-6">
-								<a href="#" class="image fit"><img src="images/pic15.jpg" alt="" /></a>
-							</div>
-						</div>
-					</section>
-
 				</div>
 				<hr />
 				<div class="row">
@@ -574,24 +466,14 @@
 
 						<!-- Contact -->
 						<section class="contact">
-							<header>
-								<h3>Nisl turpis nascetur interdum?</h3>
-							</header>
-							<p>Urna nisl non quis interdum mus ornare ridiculus egestas ridiculus lobortis vivamus
-								tempor aliquet.</p>
 							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a>
+								<li><a href="https://www.facebook.com/share/14pWQQ6Duq/?mibextid=wwXIfr" target="_blank"
+										class="icon brands fa-facebook-f"><span class="label">Facebook</span></a>
 								</li>
-								<li><a href="#" class="icon brands fa-facebook-f"><span
-											class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram"><span
-											class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-pinterest"><span
-											class="label">Pinterest</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a>
+								<li><a href="https://www.instagram.com/thermasatfarming?igsh=NjBwaGFubW1iaWg2&utm_source=qr"
+										target="_blank" class="icon brands fa-instagram"><span
+											class="label">Instagram</span></a>
 								</li>
-								<li><a href="#" class="icon brands fa-linkedin-in"><span
-											class="label">Linkedin</span></a></li>
 							</ul>
 						</section>
 
@@ -599,7 +481,6 @@
 						<div class="copyright">
 							<ul class="menu">
 								<li>&copy; Untitled. All rights reserved.</li>
-								<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
 
@@ -607,21 +488,23 @@
 
 				</div>
 			</div>
+
+			<button id="scrollToTopBtn" class="scrollToTopBtn">↑</button>
+
 		</div>
 
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.dropotron.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-	<script src="assets/js/custom.js"></script>
-	<script src="assets/js/news.js"></script>
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/custom.js"></script>
+		<script src="assets/js/modal-gallery.js"></script>
+		<script src="assets/js/scroll-button.js"></script>
 
 </body>
 

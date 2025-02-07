@@ -3378,18 +3378,178 @@ body.homepage.is-preload #header:after {
   transition: font-size 0.3s ease;
 }
 
-#news-section {
+/* Основные стили для галереи */
+.all-gallery {
+  max-width: 1200px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+/* Сетка изображений для основной галереи (5 изображений в ряд) */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 изображений в ряд */
+  gap: 10px;
+  justify-content: center;
+}
+
+.all-gallery-item {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.all-gallery-item:hover {
+  transform: scale(1.05);
+}
+
+/* Стили для изображений */
+.all-gallery-item img {
+  width: 100%;
+  height: 200px; /* Уменьшенная высота изображений */
+  object-fit: cover; /* Чтобы изображения не искажались */
+  display: block;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.all-gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Модальное окно */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Увеличенное изображение */
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+/* Кнопка закрытия */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+/* Адаптация под мобильные устройства */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 2 изображения в ряд на экранах до 768px */
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: 1fr; /* 1 изображение в ряд на экранах до 480px */
+  }
+}
+
+/* Стили для новостной галереи (2 изображения в ряд) */
+.gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 10px;
+  justify-content: center;
 }
 
-#news-section article {
-  flex: 0 0 30%;
-  margin-bottom: 20px;
+.gallery-item {
+  width: calc(50% - 10px); /* 2 изображения в ряд */
 }
 
-#news-section img {
+.gallery-item img {
   width: 100%;
-  height: auto;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Модальное окно */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Увеличенное изображение */
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+/* Кнопка закрытия */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+/* Адаптация под мобильные устройства */
+@media (max-width: 768px) {
+  .gallery-item {
+    width: calc(50% - 10px); /* 2 изображения в ряд на экранах до 768px */
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-item {
+    width: calc(100% - 10px); /* 1 изображение в ряд на экранах до 480px */
+  }
+}
+
+.scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #df7366;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none; /* Скрыть кнопку по умолчанию */
+}
+
+.scrollToTopBtn:hover {
+  background-color: #ef8376;
 }
