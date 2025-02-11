@@ -3547,9 +3547,59 @@ body.homepage.is-preload #header:after {
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
-  display: none; /* Скрыть кнопку по умолчанию */
+  display: none;
 }
 
 .scrollToTopBtn:hover {
   background-color: #ef8376;
+}
+
+/* Контейнер для кнопки и картинки */
+.button-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Стиль для кнопки */
+#startButton {
+  position: relative;
+  z-index: 15; /* Кнопка будет поверх картинки */
+  width: 90px;
+  height: 90px;
+}
+
+/* Начальный стиль для картинки, скрытой за кнопкой */
+#image-container.hidden {
+  display: none;
+  position: absolute; /* Абсолютное позиционирование для картинки */
+  top: 0;
+  left: 0;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Центрируем картинку относительно кнопки */
+  z-index: 1; /* Картинка будет под кнопкой */
+}
+
+/* Стиль для анимации картинки */
+@keyframes fly-in-out {
+  0% {
+    transform: translate(-50%, -50%) scale(0); /* Начальная позиция — картинка маленькая и вдали */
+    opacity: 0;
+  }
+  50% {
+    transform: translate(0, 0) scale(1); /* Картинка приходит в нормальный размер */
+    opacity: 1;
+  }
+  100% {
+    transform: translate(300px, -300px) scale(1); /* Перемещаем картинку по диагонали вправо-вверх */
+    opacity: 0; /* Картинка исчезает */
+  }
+}
+
+/* Применяем анимацию */
+#image-container {
+  animation: fly-in-out 4s ease-in-out forwards; /* Увеличили время анимации на 0.5 секунды */
+  z-index: 10; /* Картинка будет поверх кнопки во время анимации */
+  display: block; /* Показываем картинку */
 }

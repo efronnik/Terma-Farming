@@ -10,6 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.2",
+    "i18next": "^24.2.2",
+    "i18next-browser-languagedetector": "^8.0.2",
+    "i18next-http-backend": "^3.0.2",
     "jquery": "^3.7.1"
   },
   "description": ""

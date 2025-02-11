@@ -18,7 +18,7 @@
 		<div id="header">
 			<video class="video" autoplay muted loop id="background-video">
 				<source src="./images/videos/Drone_main_backgraund.mp4" type="video/mp4">
-				Ваш браузер не поддерживает видео.
+				Your browser does not support video.
 			</video>
 			<!-- Inner -->
 			<div class="inner">
@@ -28,21 +28,31 @@
 					<p>2024-1-PL01-KA220-VET-000243502</p>
 				</header>
 				<footer>
-					<a href="https://therma-sat.net/" class="button circled scrolly">Start</a>
+					<div class="button-container">
+						<a href="#" class="button circled scrolly" id="startButton">Start</a>
+						<div id="image-container" class="hidden">
+							<img src="./images/animated-button.png" alt="Animated img" id="animated-image" width="150"
+								height="150">
+						</div>
+					</div>
+
 				</footer>
 			</div>
 
 			<!-- Nav -->
 			<nav id="nav">
 				<ul>
-					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="https://therma-sat.net/" target="_blank">Courses</a></li>
 					<li>
-						<a href="#partners-carousel">Partners</a>
+						<a href="index.html#partners-carousel">Partners</a>
 					</li>
-					<li><a href="left-sidebar.html">Virtual Museum</a></li>
-					<li><a href="#features">News</a></li>
-					<li><a href="#about">About</a></li>
+					<li><a href="index.html#features">News</a></li>
+					<li><a href="index.html#about">About</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="virtual-museum.html">Virtual Museum</a></li>
 				</ul>
+
 				<div id="logo-container">
 					<!-- Logo -->
 					<a href="index.html">
@@ -50,6 +60,7 @@
 					</a>
 				</div>
 				<section class="social-media-top">
+
 					<ul class="icons">
 						<li><a href="https://www.facebook.com/share/14pWQQ6Duq/?mibextid=wwXIfr" target="_blank"
 								class="icon brands fa-facebook-f"><span class="label">Facebook</span></a>
@@ -178,8 +189,8 @@
 				</header>
 				<div class="row" id="main-news-list">
 					<article class="col-4 col-12-mobile special">
-						<a href="right-sidebar.html#Antalya" class="image featured"><img src="images/Antalya_all.jpg"
-								alt="" loading="lazy" /></a>
+						<a href="news.html#Antalya" class="image featured"><img src="images/Antalya_all.jpg" alt=""
+								loading="lazy" /></a>
 						<header>
 							<h3>Summary of the Erasmus+ Project Meeting in Antalya</h3>
 						</header>
@@ -192,8 +203,8 @@
 						</p>
 					</article>
 					<article class="col-4 col-12-mobile special">
-						<a href="right-sidebar.html#Swarozyn" class="image featured"><img src="images/swarozyn-all.jpg"
-								alt="" loading="lazy" /></a>
+						<a href="news.html#Swarozyn" class="image featured"><img src="images/swarozyn-all.jpg" alt=""
+								loading="lazy" /></a>
 						<header>
 							<h3>1st International Agricultural Conference: Innovations and Cooperation for the
 								Development of the Agricultural Sector</h3>
@@ -206,7 +217,7 @@
 						</p>
 					</article>
 				</div>
-				<a href="./right-sidebar.html">
+				<a href="./news.html">
 					<button class="oval-button">Read more</button>
 				</a>
 			</section>
@@ -275,6 +286,7 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/scroll-button.js"></script>
+	<script src="assets/js/animation.js"></script>
 
 </body>
 
