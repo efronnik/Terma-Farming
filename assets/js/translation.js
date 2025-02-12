@@ -34,3 +34,29 @@ function loadLanguage(lang) {
     })
     .catch((error) => console.error("Ошибка загрузки перевода:", error));
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const languageDropdown = document.getElementById("language-dropdown");
+  const flags = {
+    en: "🇬🇧",
+    pl: "🇵🇱",
+    tr: "🇹🇷",
+    it: "🇮🇹",
+    hr: "🇭🇷",
+    ro: "🇷🇴",
+  };
+
+  function updateDropdown() {
+    for (let option of languageDropdown.options) {
+      let langCode = option.value;
+      if (flags[langCode]) {
+        option.textContent = `${flags[langCode]} ${option.textContent.replace(
+          /^[^\s]+ /,
+          ""
+        )}`;
+      }
+    }
+  }
+
+  updateDropdown();
+});
