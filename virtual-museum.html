@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>News</title>
+	<title data-translate="title-virtual-museum">Virtual Museum</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -25,22 +25,22 @@
 			<!-- Inner -->
 			<div class="inner">
 				<header>
-					<h1>Virtual Museum</h1>
+					<h1 data-translate="title-virtual-museum">Virtual Museum</h1>
 				</header>
 			</div>
 
 			<!-- Nav -->
 			<nav id="nav">
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="https://therma-sat.net/" target="_blank">Courses</a></li>
+					<li><a href="index.html" data-translate="home">Home</a></li>
+					<li><a href="https://therma-sat.net/" target="_blank" data-translate="courses">Courses</a></li>
 					<li>
-						<a href="index.html#partners-carousel">Partners</a>
+						<a href="index.html#partners-carousel" data-translate="partners">Partners</a>
 					</li>
-					<li><a href="index.html#features">News</a></li>
-					<li><a href="index.html#about">About</a></li>
-					<li><a href="gallery.html">Gallery</a></li>
-					<li><a href="virtual-museum.html">Virtual Museum</a></li>
+					<li><a href="index.html#features" data-translate="news">News</a></li>
+					<li><a href="index.html#about" data-translate="about">About</a></li>
+					<li><a href="gallery.html" data-translate="gallery">Gallery</a></li>
+					<li><a href="virtual-museum.html" data-translate="virtual_museum">Virtual Museum</a></li>
 				</ul>
 				<div id="logo-container">
 					<!-- Logo -->
@@ -59,6 +59,14 @@
 						</li>
 					</ul>
 				</section>
+				<select id="language-dropdown">
+					<option value="en">English</option>
+					<option value="pl">Polski</option>
+					<option value="tr">Türkçe</option>
+					<option value="it">Italiano</option>
+					<option value="hr">Hrvatski</option>
+					<option value="ro">Română</option>
+				</select>
 			</nav>
 
 		</div>
@@ -88,7 +96,8 @@
 					<section>
 						<img src=" ./images/EU.png" class="center-image" style="pointer-events: none;"
 							alt="EU_Co_funded" width="500" height="112" loading="lazy" />
-						<p style="pointer-events: none;">Funded by the European Union. Views and opinions expressed are
+						<p style="pointer-events: none;" data-translate="eu-funding">Funded by the European Union. Views
+							and opinions expressed are
 							however those of the author(s)
 							only and do not
 							necessarily reflect those of the European Union or the European Education and Culture
@@ -141,6 +150,7 @@
 		<script src="assets/js/custom.js"></script>
 		<script src="assets/js/modal-gallery.js"></script>
 		<script src="assets/js/scroll-button.js"></script>
+		<script src="assets/js/translation.js"></script>
 
 </body>
 
