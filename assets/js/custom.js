@@ -5,10 +5,13 @@ $(".toggle-btn").click(function (e) {
 
   // Меняем текст кнопки в зависимости от состояния
   if (textContainer.hasClass("text-open")) {
-    $(this).text("Less"); // Если текст раскрыт, меняем на "Less"
+    $(this).attr("data-translate", "less_button"); // Динамически меняем на "Less"
   } else {
-    $(this).text("Read more"); // Если текст скрыт, меняем обратно на "Read more"
+    $(this).attr("data-translate", "read_more_button"); // Меняем на "Read more"
   }
+
+  // Переводим текст кнопки после изменения
+  translateButtonText($(this));
 
   // Если текст раскрыт, прокручиваем страницу вверх до кнопки "Less"
   if (!textContainer.hasClass("text-open")) {
@@ -19,4 +22,28 @@ $(".toggle-btn").click(function (e) {
       300
     ); // Время анимации 300мс
   }
+});
+
+// Функция для перевода кнопки
+function translateButtonText(button) {
+  const key = button.attr("data-translate");
+  const language = localStorage.getItem("language") || "en"; // Загружаем текущий язык
+  fetch(`assets/locales/${language}.json`)
+    .then((response) => response.json())
+    .then((translations) => {
+      const translation = translations[key];
+      if (translation) {
+        button.text(translation); // Обновляем текст кнопки
+      }
+    })
+    .catch((error) =>
+      console.error("Ошибка при загрузке перевода кнопки:", error)
+    );
+}
+
+// Первоначальный перевод для всех кнопок на странице
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".toggle-btn").forEach(function (button) {
+    translateButtonText($(button)); // Переводим кнопки при загрузке
+  });
 });

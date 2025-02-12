@@ -3627,31 +3627,6 @@ body.homepage.is-preload #header:after {
   background-size: 20px 15px; /* Размер флага */
 }
 
-/* Устанавливаем флаг для каждого языка */
-#language-dropdown option[value="en"] {
-  background-image: url("./images/flags/gb.png");
-}
-
-#language-dropdown option[value="pl"] {
-  background-image: url("./images/flags/pl.png");
-}
-
-#language-dropdown option[value="tr"] {
-  background-image: url("./images/flags/tr.png");
-}
-
-#language-dropdown option[value="it"] {
-  background-image: url("./images/flags/it.png");
-}
-
-#language-dropdown option[value="hr"] {
-  background-image: url("./images/flags/hr.png");
-}
-
-#language-dropdown option[value="ro"] {
-  background-image: url("./images/flags/ro.png");
-}
-
 #language-dropdown {
   font-size: 16px;
   padding: 10px;
