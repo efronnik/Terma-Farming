@@ -3640,3 +3640,58 @@ body.homepage.is-preload #header:after {
   display: flex;
   align-items: center;
 }
+
+.styled-list {
+  list-style-type: none; /* Убираем маркеры */
+  padding: 0;
+  display: flex; /* Используем flexbox для горизонтального расположения */
+  flex-wrap: wrap; /* Позволяет ссылкам переходить на следующую строку, если не помещаются */
+  justify-content: space-evenly; /* Равномерное распределение элементов */
+}
+
+.styled-list li {
+  margin: 10px; /* Отступы между ссылками */
+  padding: 10px;
+  border: 2px solid #df7366; /* Граница вокруг каждой ссылки */
+  border-radius: 5px; /* Закругленные углы */
+  transition: all 0.3s ease; /* Плавные переходы при наведении */
+  width: 200px; /* Ширина элемента */
+  text-align: center; /* Выравнивание текста по центру */
+  color: #ef8376; /* Цвет текста по умолчанию */
+}
+
+.styled-list li:hover {
+  background-color: #ef8376; /* Цвет фона при наведении */
+  color: white; /* Цвет текста при наведении на сам квадрат */
+  transform: scale(1.05); /* Увеличение элемента при наведении */
+}
+
+.styled-list li a {
+  text-decoration: none; /* Убираем подчеркивание */
+  color: inherit; /* Наследуем цвет текста от родителя */
+  font-weight: bold; /* Полужирный шрифт */
+  display: block; /* Делает ссылку блочным элементом */
+}
+
+.styled-list li a:hover {
+  color: white; /* Изменение цвета текста ссылки при наведении */
+}
+
+.book-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.book-container img {
+  width: 200px; /* Задайте нужный размер */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.book-container img:hover {
+  transform: scale(1.1); /* Небольшое увеличение при наведении */
+}
